@@ -21,6 +21,10 @@ struct SearchView: View {
                             .padding(.bottom)
                     }
                     Spacer().frame(height: 110)
+                }.refreshable {
+                    Task {
+                        await CafesVM.getCafes(word: vm.searchingText)
+                    }
                 }
             } else {
                 Spacer()
