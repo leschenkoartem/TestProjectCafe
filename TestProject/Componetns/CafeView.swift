@@ -10,15 +10,17 @@ import SwiftUI
 struct CafeView: View {
     
     var cafe: Vendor
-    var textCateg: String {
-        get {
-            var final = ""
-            for i in cafe.categories {
-                final += ("•\(i.name) ")
-            }
-            return final
-        }
-    }
+    var textCateg: String = "-sas"
+    
+//    {
+//        get {
+//            var final = ""
+//            for i in cafe.categories {
+//                final += ("•\(i.name) ")
+//            }
+//            return final
+//        }
+//    }
 
     var body: some View {
         
@@ -51,12 +53,12 @@ struct CafeView: View {
                             Spacer()
                             HStack {
                                 Text(cafe.areaServed)
-                                    .fontWeight(.light)
+                                    .font(.custom(FontManager.troika, size: 23))
                                     .padding(4)
                                     .padding(.horizontal, 5)
                                     .background(Color(.systemGray6).opacity(0.75))
                                     .cornerRadius(30)
-                                
+                                    
                                 Spacer()
                             }.padding()
                         }

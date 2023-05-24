@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E375FF8F2A1E5D8D00585446 /* COPYRIGHT.txt in Resources */ = {isa = PBXBuildFile; fileRef = E375FF8C2A1E5D8D00585446 /* COPYRIGHT.txt */; };
+		E375FF902A1E5D8D00585446 /* troika.otf in Resources */ = {isa = PBXBuildFile; fileRef = E375FF8D2A1E5D8D00585446 /* troika.otf */; };
+		E375FF912A1E5D8D00585446 /* freefont_license.txt in Resources */ = {isa = PBXBuildFile; fileRef = E375FF8E2A1E5D8D00585446 /* freefont_license.txt */; };
+		E375FF942A1E5E6600585446 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E375FF932A1E5E6600585446 /* FontManager.swift */; };
 		E3DBEF3829F0514F00E8D282 /* TestProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DBEF3729F0514F00E8D282 /* TestProjectApp.swift */; };
 		E3DBEF3A29F0514F00E8D282 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DBEF3929F0514F00E8D282 /* MainView.swift */; };
 		E3DBEF3C29F0515200E8D282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3DBEF3B29F0515200E8D282 /* Assets.xcassets */; };
@@ -23,6 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E375FF8C2A1E5D8D00585446 /* COPYRIGHT.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYRIGHT.txt; sourceTree = "<group>"; };
+		E375FF8D2A1E5D8D00585446 /* troika.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = troika.otf; sourceTree = "<group>"; };
+		E375FF8E2A1E5D8D00585446 /* freefont_license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = freefont_license.txt; sourceTree = "<group>"; };
+		E375FF922A1E5DC600585446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E375FF932A1E5E6600585446 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
 		E3DBEF3429F0514F00E8D282 /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3DBEF3729F0514F00E8D282 /* TestProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProjectApp.swift; sourceTree = "<group>"; };
 		E3DBEF3929F0514F00E8D282 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -50,6 +59,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E375FF8B2A1E5D7200585446 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				E375FF8C2A1E5D8D00585446 /* COPYRIGHT.txt */,
+				E375FF8E2A1E5D8D00585446 /* freefont_license.txt */,
+				E375FF8D2A1E5D8D00585446 /* troika.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		E3DBEF2B29F0514F00E8D282 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +88,7 @@
 		E3DBEF3629F0514F00E8D282 /* TestProject */ = {
 			isa = PBXGroup;
 			children = (
+				E375FF922A1E5DC600585446 /* Info.plist */,
 				E3DBEF3729F0514F00E8D282 /* TestProjectApp.swift */,
 				E3DBEF5B29F0769400E8D282 /* ViewModels */,
 				E3DBEF5829F0733C00E8D282 /* Services */,
@@ -92,6 +112,7 @@
 		E3DBEF4529F051C800E8D282 /* Componetns */ = {
 			isa = PBXGroup;
 			children = (
+				E375FF8B2A1E5D7200585446 /* Font */,
 				E3DBEF4629F051DA00E8D282 /* CustomTextField.swift */,
 				E3DBEF4E29F053BC00E8D282 /* CustomTabBar.swift */,
 				E3DBEF5029F0574300E8D282 /* CafeView.swift */,
@@ -121,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				E3DBEF5929F0735800E8D282 /* JSONManager.swift */,
+				E375FF932A1E5E6600585446 /* FontManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -198,6 +220,9 @@
 			files = (
 				E3DBEF3F29F0515200E8D282 /* Preview Assets.xcassets in Resources */,
 				E3DBEF3C29F0515200E8D282 /* Assets.xcassets in Resources */,
+				E375FF912A1E5D8D00585446 /* freefont_license.txt in Resources */,
+				E375FF8F2A1E5D8D00585446 /* COPYRIGHT.txt in Resources */,
+				E375FF902A1E5D8D00585446 /* troika.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +243,7 @@
 				E3DBEF4F29F053BC00E8D282 /* CustomTabBar.swift in Sources */,
 				E3DBEF5A29F0735800E8D282 /* JSONManager.swift in Sources */,
 				E3DBEF4729F051DA00E8D282 /* CustomTextField.swift in Sources */,
+				E375FF942A1E5E6600585446 /* FontManager.swift in Sources */,
 				E3DBEF6129F0AFB900E8D282 /* CafesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +375,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TestProject/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -377,6 +404,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TestProject/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
