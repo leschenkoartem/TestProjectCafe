@@ -12,15 +12,7 @@ struct CafeView: View {
     var cafe: Vendor
     var textCateg: String = "-sas"
     
-//    {
-//        get {
-//            var final = ""
-//            for i in cafe.categories {
-//                final += ("•\(i.name) ")
-//            }
-//            return final
-//        }
-//    }
+
 
     var body: some View {
         
